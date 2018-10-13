@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>teste</title>
+</head>
+<body>
+    <h1>Primeira pagina web</h1>
+    <p>{{data['mensagem']}}</p>
+    
+    {%for letra in letras%}
+        {%if letra != 'a' %}
+            <p>{{letra.upper()}}</p>
+
+        {% else %}
+        <p>teste do else</p>    
+        {% endif %} 
+    {% endfor%}
+</body>
+</html>
